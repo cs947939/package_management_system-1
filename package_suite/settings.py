@@ -40,6 +40,8 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+        'Uploads.apps.UploadsConfig',
+    'uploader.apps.UploaderConfig',
 ]
 
 MIDDLEWARE = [
@@ -122,4 +124,8 @@ STATIC_URL = 'static/'
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 LOGIN_URL = 'admin/'
-
+DEFAULT_FILE_STORAGE = 'Uploads.s3.MediaStorage'
+AWS_S3_REGION_NAME = 'us-west-004'
+AWS_S3_ENDPOINT_URL = 'https://s3.us-west-004.backblazeb2.com'
+AWS_ACCESS_KEY_ID = '004a9e81991c2860000000001'
+AWS_SECRET_ACCESS_KEY = 'K004XByq9AqVXOrCDoHAsTfv3DiFC3I'
