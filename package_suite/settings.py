@@ -81,6 +81,7 @@ STUPID_SSL_CERT = os.path.join(BASE_DIR,"ca1.pem")
 # https://docs.djangoproject.com/en/4.1/ref/settings/#databases
 
 
+
 DATABASES = {
   'default': {
     'ENGINE': 'django.db.backends.postgresql',
